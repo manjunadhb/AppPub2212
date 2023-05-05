@@ -6,8 +6,8 @@ let app = express();
 app.use(cors());
 app.use(express.static(path.join(__dirname, "./client/build")));
 
-app.listen(1234, () => {
-  console.log("Listening to port 1234");
+app.listen(2222, () => {
+  console.log("Listening to port 2222");
 });
 
 const mongoose = require("mongoose");

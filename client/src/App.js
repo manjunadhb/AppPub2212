@@ -9,15 +9,9 @@ function App() {
       method: "GET",
     };
 
-    let JSONData = await fetch(
-      "/getInternees",
-      reqOptions
-    );
-
+    let JSONData = await fetch("/getInternees", reqOptions);
     let JSOData = await JSONData.json();
-
     setInternees(JSOData);
-
     console.log(JSOData);
   };
 
