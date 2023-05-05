@@ -1,10 +1,10 @@
 const express = require("express");
 const cors = require("cors");
+const path = requuire("path");
 
 let app = express();
 app.use(cors());
 app.use(express.static(path.join(__dirname, "./client/build")));
-
 
 app.listen(1234, () => {
   console.log("Listening to port 1234");
